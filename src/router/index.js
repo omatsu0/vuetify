@@ -22,6 +22,46 @@ const routes = [
     path: '/enterprise',
     name: 'enterprise',
     component: () => import('../views/Enterprise.vue')
+  },
+  {
+    path: '/consulting-and-support',
+    name: 'consulting',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/consulting-and-support.vue')
+  },
+  {
+    path: '/discord-community',
+    name: 'discord-community',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "discord-community" */ '../views/discord-community.vue')
+  },
+  {
+    path: '/github-issue-board',
+    name: 'github-issue-board',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/github-issue-board.vue')
+  },
+  {
+    path: '/report-a-bug',
+    name: 'report-a-bug',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/report-a-bug.vue')
+  },
+  {
+    path: '/stack-overview',
+    name: 'stack-overview',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "stack-overview" */ '../views/stack-overview.vue')
   }
 ]
 

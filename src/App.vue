@@ -22,7 +22,7 @@
                 <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
               </v-list-item-content>
             </template>
-            <v-list-item v-for="list in nav_list.lists" :key="list">
+            <v-list-item v-for="list in nav_list.lists" :key="list.name" :to="list.link">
               <v-list-item-content>
                 <v-list-item-title>{{ list }}</v-list-item-title>
               </v-list-item-content>
@@ -88,7 +88,7 @@ export default {
         {
           name: 'Github issue board',
           icon: 'mdi-github-face',
-          link: '/guthub-issue-board'
+          link: '/github-issue-board'
         },
         {
           name: 'Stack overview',
@@ -100,7 +100,13 @@ export default {
         {
           name: 'Getting Started',
           icon: 'mdi-speedometer',
-          lists: ['Quick Start', 'Pre-made layouts']
+          lists: [{
+            name: 'Quick Start', link: '/quick-start'
+          },
+          {
+            name: 'Pre-made layouts', link: '/pre-made-layouts'
+          }
+          ]
         },
         {
           name: 'Customization',
