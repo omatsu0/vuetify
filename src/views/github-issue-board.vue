@@ -1,19 +1,40 @@
 <template>
-  <v-container fluid mr-5>
-    <v-row class="grey lighten-3" justify="space-between" style="height: 200px;">
-      <v-col cols="7" alignSelf="center" style="background-color: #FFCDD2">
-        <h1 :font-size="$vuetify.breakpoint.xs ? 20 : 5">タイトルタイ</h1>
-      </v-col>
-      <v-col style="background-color: #E1BEE7">
-        <v-btn color="primary">質問する</v-btn>
-        <!-- <v-btn color="primary" :min-height="$vuetify.breakpoint.xs ? 300 : '20vh'">質問する</v-btn> -->
-        <!-- <v-btn :block="$vuetify.breakpoint.xsOnly" flat>Cancel</v-btn> -->
-      </v-col>
-    </v-row>
+  <v-container>
+    <v-col cols="1" class="indigo">
+      <v-row class="blue" justify="center" align="center">aaaa
+      </v-row>
+      <v-row class="red" justify="center" align="center">eeeee</v-row>
+      <v-row class="pink" justify="center" align="center">uuuu</v-row>
+    </v-col>
+    <v-col cols="8" class="cyan inline-block"><v-col class="pt-0">e---</v-col><v-col class="pb-3">e---</v-col><v-col class="pb-1">e---</v-col></v-col>
+
   </v-container>
 </template>
-<style scoped>
-h1{
-  font-size:1.5rem;
+
+<style>
+.blue{
+  background-color: blue;
+  width: 100px;
+  height: 50px;
 }
+.red{
+  background-color: red;
+  width: 100px;
+  height: 50px;
+}
+.indigo{
+  height: 150px;
+  float:left;
+}
+.pink{
+  background-color: pink;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+}
+.inline-block{
+  display: inline-block;
+}
+
 </style>
