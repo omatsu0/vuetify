@@ -1,5 +1,5 @@
 <template>
-  <div class="container gray">
+  <div class="gray">
     <div class="item blue">Item 1</div>
     <div class="item red">Item 2</div>
     <div class="item indigo">Item 3</div>
@@ -10,6 +10,7 @@
 <style>
 .gray{
   background-color: gray;
+  display: flex;
 }
 .blue{
   background-color: blue;
