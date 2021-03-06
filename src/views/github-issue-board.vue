@@ -1,9 +1,10 @@
 <template>
-  <div class="gray">
+  <div class="container gray">
     <div class="item blue">Item 1</div>
     <div class="item red">Item 2</div>
     <div class="item indigo">Item 3</div>
     <div class="item pink">Item 4</div>
+    <span>aaa</span>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 .gray{
   background-color: gray;
   display: flex;
+  flex-direction: column-reverse;
 }
 .blue{
   background-color: blue;
