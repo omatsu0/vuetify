@@ -1,14 +1,14 @@
 <template>
   <v-container class="container gray">
-    <v-row class="container2 ma-0">
-      <v-col class="item blue">Item 1</v-col>
-      <v-col class="item red">Item 2</v-col>
-      <v-col class="item indigo">Item 3</v-col>
-      <v-col class="item pink">Item 4</v-col>
-    </v-row>
-    <v-row class="container3 ma-0">
-      <v-col class="orange">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</v-col>
-    </v-row>
+    <v-col cols="1" class="container2">
+      <v-row class="item blue">Item 1</v-row>
+      <v-row class="item red">Item 2</v-row>
+      <v-row class="item indigo">Item 3</v-row>
+      <v-row class="item pink">Item 4</v-row>
+    </v-col>
+    <v-col class="container3">
+      <v-row class="orange">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</v-row>
+    </v-col>
   </v-container>
 </template>
 
@@ -36,15 +36,9 @@
 .inline-block{
   display: inline-block;
 }
-.container2{
-  display: flex;
-  flex-direction: column;
-
-}
 .container3{
   display: flex;
   width:inherit;
   background-color: black;
 }
-
 </style>
