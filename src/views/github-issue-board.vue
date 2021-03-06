@@ -1,15 +1,15 @@
 <template>
-  <div class="container gray">
-    <div class="container2">
-      <div class="item blue">Item 1</div>
-      <div class="item red">Item 2</div>
-      <div class="item indigo">Item 3</div>
-      <div class="item pink">Item 4</div>
-    </div>
-    <div class="container3">
-      <div class="orange">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
-    </div>
-  </div>
+  <v-container class="container gray">
+    <v-row class="container2 ma-0">
+      <v-col class="item blue">Item 1</v-col>
+      <v-col class="item red">Item 2</v-col>
+      <v-col class="item indigo">Item 3</v-col>
+      <v-col class="item pink">Item 4</v-col>
+    </v-row>
+    <v-row class="container3 ma-0">
+      <v-col class="orange">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <style>
@@ -20,22 +20,18 @@
 .blue{
   background-color: blue;
   white-space: nowrap;
-  padding: 10px;
 }
 .red{
   background-color: red;
   white-space: nowrap;
-  padding: 10px;
 }
 .indigo{
   background-color: indigo;
   white-space: nowrap;
-  padding: 10px;
 }
 .pink{
   background-color: pink;
   white-space: nowrap;
-  padding: 10px;
 }
 .inline-block{
   display: inline-block;
@@ -50,7 +46,5 @@
   width:inherit;
   background-color: black;
 }
-.orange{
-  padding:10px;
-}
+
 </style>
