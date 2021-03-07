@@ -18,7 +18,7 @@
         <v-col class="item red"></v-col>
       </v-row> -->
     <v-row class="ma-0 row-con">
-      <v-col class="green"><span class="hidden">Item 4</span></v-col>
+      <v-col class="green">item4</v-col>
     </v-row>
       <v-row class="container5 ma-0">
         <v-col cols="12" class="yellow">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</v-col>
@@ -69,9 +69,9 @@
   background-color: green;
   white-space: nowrap;
 }
-.hidden{
+/* .hidden{
   visibility:hidden;
-}
+} */
 .row-con{
   width:1000px;
 }
