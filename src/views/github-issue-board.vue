@@ -1,5 +1,5 @@
 <template>
-  <v-container class="container gray">
+  <v-container class="container gray d-flex">
     <v-row class="container2 ma-0">
       <v-col class="item blue">Item 1</v-col>
       <v-col class="item red">Item 2</v-col>
@@ -14,7 +14,6 @@
 <style>
 .gray{
   background-color: gray;
-  display: flex;
 }
 .blue{
   background-color: blue;
@@ -32,10 +31,8 @@
   background-color: pink;
   white-space: nowrap;
 }
-.inline-block{
-  display: inline-block;
-}
 .container2{
+  display: flex;
   flex-direction: column;
 }
 .container3{
